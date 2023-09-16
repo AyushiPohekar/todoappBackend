@@ -12,6 +12,9 @@ app.use(cors());
 app.use(express.json())
 
 app.use('/',Routes)
+app.use('/',(req,res)=>{
+    res.send("Welcome to todo app")
+})
 
 
 app.listen(PORT,()=>{
